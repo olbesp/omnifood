@@ -196,14 +196,12 @@ h3 {
 
 .step-list {
   width: 50%;
-
 }
 
 .step-list ul {
   width: 70%;
   margin-left: 50px;
   list-style: none;
-
 }
 
 .step {
@@ -221,6 +219,17 @@ h3 {
   font-size: 30px;
   color: #ff9e28;
 }
+
+.mobile-app img {
+  width: 120px;
+  transition: transform .3s;
+}
+
+.mobile-app img:hover {
+  transform: scale(1.15);
+}
+
+.mobile-app:first-of-type { margin-left: 90px; }
 /*-----------------------------------------------------------------------------*/
 /*Cities*/
 /*------------------------------------------------------------------------------*/
