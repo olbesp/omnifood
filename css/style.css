@@ -374,6 +374,7 @@ h3 {
 .email-form {
   width: 30%;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 input,
@@ -411,3 +412,50 @@ input[type="checkbox"]:focus {
   display: block;
   margin: 0 auto;
 }
+/*------------------------------------------------------------------------------*/
+/*Footer*/
+/*-------------------------------------------------------------------------------*/
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 80%;
+  background: #303030;
+  color: #e8e8e8;
+}
+
+.footer-nav,
+.social-media {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.main-footer li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footer-nav a,
+.social-media .fa {
+  padding: 10px;
+  text-decoration: none;
+  color: #e8e8e8;
+  transition: color .2s;
+}
+
+.footer-nav a:hover,
+.social-media .fa:hover {
+  color: #ff9e28;
+}
+
+.social-media { text-align: right; }
+
+.social-media ul { margin-bottom: 0; }
+
+.social-media .fa { font-size: 20px; }
+
+.copyright {
+  width: 100%;
+  text-align: center;
+}
+
+.copyright p { margin-top: 0; }
