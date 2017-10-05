@@ -87,6 +87,7 @@ h1 span {
   border: 1px solid #cc6f00;
   border-radius: 30px;
   background: transparent;
+  font-size: 80%;
   color: #d87200;
   cursor: pointer;
   transition: color .2s, background-color .3s;
