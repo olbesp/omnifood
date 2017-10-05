@@ -107,7 +107,7 @@ h1 span {
 /*Features*/
 /*------------------------------------------------------------------------------*/
 .title {
-  margin-top: 70px;
+  padding-top: 70px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 3px;
@@ -129,10 +129,7 @@ h1 span {
   text-align: center;
 }
 
-.features {
-  display: flex;
-  margin: 0 -2%;
-}
+.features { display: flex; }
 
 .feature-description {
   width: 22%;
@@ -177,4 +174,49 @@ h1 span {
 .meal-img img:hover {
   opacity: 1;
   transform: scale(1);
+}
+/*-----------------------------------------------------------------------------*/
+/*How it works*/
+/*------------------------------------------------------------------------------*/
+.steps {
+  padding-bottom: 50px;
+  background: #e8e8e8;
+}
+.boxes { display: flex; }
+
+.iphone-img {
+  width: 50%;
+}
+
+.iphone-img img {
+  width: 40%;
+  float: right;
+}
+
+.step-list {
+  width: 50%;
+
+}
+
+.step-list ul {
+  width: 70%;
+  margin-left: 50px;
+  list-style: none;
+
+}
+
+.step {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.step span {
+  position: absolute;
+    top: 10%;
+    left: -25%;
+  padding: 10px 18px 15px;
+  border: 2px solid #ff9e28;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #ff9e28;
 }
