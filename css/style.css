@@ -149,3 +149,32 @@ h1 span {
   font-size: 120%;
   font-family: 'Josefin Sans', sans-serif;
 }
+/*-----------------------------------------------------------------------------*/
+/*Food photos*/
+/*------------------------------------------------------------------------------*/
+.food-photos {
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto 0;
+}
+
+.meal-img {
+  width: 25%;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.meal-img img {
+  display: block;
+  width: 100%;
+  opacity: 0.3;
+  transform: scale(1.15);
+  transition: all .5s;
+}
+
+.meal-img img:hover {
+  opacity: 1;
+  transform: scale(1);
+}
