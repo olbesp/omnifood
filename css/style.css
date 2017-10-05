@@ -224,6 +224,9 @@ h3 {
 /*-----------------------------------------------------------------------------*/
 /*Cities*/
 /*------------------------------------------------------------------------------*/
+.cities {
+  padding-bottom: 40px;
+}
 .city {
   width: 22%;
   height: 300px;
@@ -274,4 +277,49 @@ h3 {
   background: url(../img/london.jpg);
   background-size: cover;
   background-position: center;
+}
+/*-----------------------------------------------------------------------------*/
+/*Testimonials*/
+/*------------------------------------------------------------------------------*/
+.testimonials {
+  padding-bottom: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/testimonials-back.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.review::before {
+  position: absolute;
+    top: 10px;
+    left: -25px;
+  content: "\201C";
+  font-size: 100px;
+}
+
+.review {
+  position: relative;
+  height: 300px;
+  width: 30%;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.author {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.author img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.author span {
+  position: absolute;
+    left: 100px;
+    bottom: 35px;
+  white-space: nowrap;
 }
