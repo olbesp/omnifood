@@ -141,8 +141,9 @@ h1 span {
   color: #ff9e28;
 }
 
-.feature-description h3 {
+h3 {
   margin-top: 10px;
+  text-transform: uppercase;
   font-size: 120%;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -219,4 +220,58 @@ h1 span {
   border-radius: 50%;
   font-size: 30px;
   color: #ff9e28;
+}
+/*-----------------------------------------------------------------------------*/
+/*Cities*/
+/*------------------------------------------------------------------------------*/
+.city {
+  width: 22%;
+  height: 300px;
+  margin: 0 1.5%;
+  box-shadow: 2px 2px 20px #000;
+}
+
+.black-box {
+  margin-top: 130px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.black-box a {
+  color: #fff;
+  transition: color .2s;
+}
+
+.black-box a:hover { color: #ff9e28; }
+
+.city .fa {
+  font-size: 120%;
+  color: #ff9e28;
+}
+
+.fa-user { margin: 0 2px; }
+
+.lisbon-city {
+  background: url(../img/lisbon.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sf-city {
+  background: url(../img/san-francisco.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+.berlin-city {
+  background: url(../img/berlin.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+.london-city {
+  background: url(../img/london.jpg);
+  background-size: cover;
+  background-position: center;
 }
