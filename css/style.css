@@ -25,24 +25,30 @@ header {
   margin: 0 auto;
 }
 
-.main-navigation { display: flex; }
-
-.logo { width: 20%; }
-
-.logo img {
-  width: 80px;
-  margin-top: 10px;
+.main-navigation {
+  position: relative;
+  display: flex;
 }
 
-.menu {
-  display: none;
+.logo {
+  width: 20%;
+  position: absolute;
+    top: 350px;
+  margin: 0 40%;
+  text-align: center;
+}
+
+.logo img {
+  display: inline-block;
+  width: 80px;
+  margin: 0 auto;
 }
 
 .menu-icon {
   width: 40px;
   height: 45px;
   position: relative;
-  margin: 35px 10px auto auto;
+  margin: 20px 10px auto auto;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
@@ -98,6 +104,71 @@ header {
   width: 0%;
   left: 50%;
 }
+
+.menu {
+  display: none;
+  position: absolute;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item { margin-bottom: 10px; }
+
+.menu-item a {
+  padding: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  transition: color .2s;
+}
+
+.menu-item a:hover {
+  color: #ff9e28;
+}
+
+.menu-item a:focus { outline: none; }
+
+.heading { margin-top: 120px; }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 110%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+h1 span {
+  font-size: 120%;
+}
+
+.heading .btn { margin-top: 20px; }
+
+.btn {
+  width: 130px;
+  height: 40px;
+  border: 1px solid #cc6f00;
+  border-radius: 30px;
+  background: transparent;
+  font-size: 80%;
+  color: #d87200;
+  cursor: pointer;
+  transition: color .2s, background-color .3s;
+}
+
+.btn-full {
+  color: #fff;
+  background: #ff9e28;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #cc6f00;
+}
+
+.btn:focus { outline: none; }
+
 /*-----------------------------------------------------------------------------*/
 /*Food photos*/
 /*------------------------------------------------------------------------------*/
