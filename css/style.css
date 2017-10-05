@@ -243,42 +243,32 @@ h3 {
   transform: scale(1);
 }
 /*-----------------------------------------------------------------------------*/
-/*How it works*/
+/*HOW IT WORKS */
 /*------------------------------------------------------------------------------*/
 .steps {
   padding-bottom: 50px;
   background: #e8e8e8;
 }
-/*.boxes { display: flex; }*/
 
-.iphone-img {
-  width: 50%;
-}
+.iphone-img { text-align: center; }
 
-.iphone-img img {
-  width: 40%;
-  float: right;
-}
-
-.step-list {
-  width: 50%;
-}
+.iphone-img img { width: 40%; }
 
 .step-list ul {
-  width: 70%;
-  margin-left: 50px;
+  margin-left: 15px;
   list-style: none;
 }
 
 .step {
-  margin-bottom: 30px;
+  margin-left: 5px;
+  margin-bottom: 15px;
   position: relative;
 }
 
 .step span {
   position: absolute;
     top: 10%;
-    left: -25%;
+    left: -30%;
   padding: 10px 18px 15px;
   border: 2px solid #ff9e28;
   border-radius: 50%;
@@ -287,7 +277,7 @@ h3 {
 }
 
 .mobile-app img {
-  width: 120px;
+  width: 80px;
   transition: transform .3s;
 }
 
