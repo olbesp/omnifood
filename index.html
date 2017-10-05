@@ -270,23 +270,22 @@
     <section class="contacts">
       <div class="title">
         <h2>We're happy to hear from you</h2>
-
       </div>
       <div class="email-form">
         <form class="" action="index.html" method="post">
-          <input type="text" name="" value="" placeholder="Your name" required>
-          <input type="email" name="" value="" placeholder="Your email" required>
+          <input type="text" name="name" value="" placeholder="Your name" required>
+          <input type="email" name="email" value="" placeholder="Your email" required>
           <select class="" name="">
             <option value="">How did you find us?</option>
-            <option value="">Friends</option>
-            <option value="">Search engine</option>
-            <option value="">Advertisement</option>
-            <option value="">Other</option>
+            <option value="friends">Friends</option>
+            <option value="search">Search engine</option>
+            <option value="ad">Advertisement</option>
+            <option value="other">Other</option>
           </select>
           <label for="news"> Newsletter?</label>
-          <input id="news" type="checkbox" name="" value="" checked>
-          <textarea name="message" placeholder="Drop us a line"></textarea>
-          <button type="submit" name="button">Send it!</button>
+          <input id="news" type="checkbox" name="news" value="news" checked>
+          <textarea name="message" rows="6" placeholder="Drop us a line"></textarea>
+          <button class="btn btn-full" type="submit" name="button">Send it!</button>
         </form>
       </div>
     </section>
