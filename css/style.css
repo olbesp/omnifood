@@ -162,6 +162,8 @@ h1 span {
   border-radius: 30px;
   background: transparent;
   font-size: 80%;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
   color: #d87200;
   cursor: pointer;
   transition: color .2s, background-color .3s;
