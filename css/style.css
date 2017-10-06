@@ -461,7 +461,6 @@ textarea:focus {
 
 select {
   background: none;
-  appearance: none;
 }
 
 .email-form .btn {
@@ -519,3 +518,49 @@ select {
 }
 
 .checkbox span:hover { cursor: pointer; }
+/*------------------------------------------------------------------------------*/
+/*FOOTER*/
+/*-------------------------------------------------------------------------------*/
+.main-footer {
+  font-size: 80%;
+  background: #303030;
+  color: #e8e8e8;
+}
+
+.footer-nav ul,
+.social-media ul {
+  padding-left: 0;
+}
+
+.main-footer li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footer-nav a,
+.social-media .fa {
+  padding: 10px;
+  text-decoration: none;
+  color: #e8e8e8;
+  transition: color .2s;
+}
+
+.footer-nav a:hover,
+.social-media .fa:hover {
+  color: #ff9e28;
+}
+
+.social-media,
+.footer-nav { text-align: center; }
+
+.social-media .fa { font-size: 20px; }
+
+.copyright {
+  width: 100%;
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
