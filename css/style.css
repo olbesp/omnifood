@@ -1,3 +1,6 @@
+/*********************************************************************************/
+/*DEVICES from ~320px to 479px*/
+/*********************************************************************************/
 * {
   box-sizing: border-box;
   /*border: 1px solid red;*/
@@ -432,6 +435,8 @@ h3 {
 /*-------------------------------------------------------------------------------*/
 /*FORM*/
 /*--------------------------------------------------------------------------------*/
+.contacts { padding: 0 20px; }
+
 .email-form {
   width: 90%;
   margin: 0 auto;
@@ -563,4 +568,28 @@ select {
 .copyright p {
   margin: 0 auto;
   padding-bottom: 10px;
+}
+
+/**********************************************************************************/
+/*DEVICES from 480px to*/
+/**********************************************************************************/
+@media only screen and (min-width: 480px) {
+
+  h1 { font-size: 140%; }
+
+  .logo {
+    margin: 30px 40%;
+    text-align: center;
+  }
+
+  .title { font-size: 100%; }
+
+  .step-list ul {
+    margin-left: 30px;
+    margin-right: 15px;
+  }
+
+  .step { margin-bottom: 25px; }
+  .step span { left: -20%; }
+  .mobile-app img { width: 120px; }
 }
