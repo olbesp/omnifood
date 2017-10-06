@@ -619,46 +619,10 @@ select {
 }
 
 /**********************************************************************************/
-/*DEVICES from 830px to px*/
+/*DEVICES from 830px to 959px*/
 /**********************************************************************************/
 @media only screen and (min-width: 830px) {
 
-  /*.menu-icon { display: none; }
-  .menu { display: block; }
-
-  .logo {
-    top: 0;
-    left: 0;
-  }
-
-  .logo img {
-    width: 130px;
-    margin-top: 10px;
-  }
-
-  .main-navigation { display: flex; }
-
-  .menu {
-    width: 80%;
-    text-align: right;
-
-  }
-
-  .menu-item {
-    display: inline-block;
-    padding: 5px 15px;
-    margin-top: 30px;
-    margin-bottom: 0;
-  }
-
-  .menu-item a {
-    padding: 15px 0;
-    border-bottom: 2px solid transparent;
-  }
-
-  .menu-item a:hover {
-    border-bottom: 1px solid #ff9e28;
-  }*/
   .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -699,5 +663,73 @@ select {
   .price-plan {
     width: 50%;
     margin: 25px 25%;
+  }
+}
+
+/**********************************************************************************/
+/*DEVICES from 960px to px*/
+/**********************************************************************************/
+@media only screen and (min-width: 960px) {
+
+  .menu-icon { display: none; }
+
+  .logo {
+    margin: 0;
+    position: static;
+  }
+
+  .logo img {
+    width: 100px;
+    margin-top: 20px;
+    float: left;
+  }
+
+  .main-navigation { display: flex; }
+
+  .menu {
+    display: block;
+    width: 80%;
+    margin-left: 20%;
+    text-align: right;
+  }
+
+  .menu-item {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 30px;
+  }
+
+  .menu-item a {
+    padding: 15px 0;
+    border-bottom: 2px solid transparent;
+    transition: color .2s, border .2s;
+  }
+
+  .menu-item a:hover {
+    color: #ff9e28;
+    border-bottom: 1px solid #ff9e28;
+  }
+
+  h1 span {
+    margin-left: 40px;
+  }
+
+  .iphone-img img { width: 60%; }
+
+  .city {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .review { width: 30%; }
+
+  .subscription .container {
+    width: 100%;
+  }
+  .price-plan {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
