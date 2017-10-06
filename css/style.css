@@ -281,10 +281,13 @@ h3 {
 
 .mobile-app img {
   width: 80px;
-  transition: transform .3s;
+  transition: transform .3s, filter .3s;
 }
 
-.mobile-app img:hover { transform: scale(1.15); }
+.mobile-app img:hover {
+  transform: scale(1.15);
+  filter: invert(100%);
+}
 
 .mobile-app:first-of-type { margin-left: 90px; }
 /*---------------------------------------------------------------------------------*/
