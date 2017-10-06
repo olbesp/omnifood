@@ -292,8 +292,11 @@
             <option value="ad">Advertisement</option>
             <option value="other">Other</option>
           </select>
-          <label for="news"> Newsletter?</label>
-          <input id="news" type="checkbox" name="news" value="news" checked>
+          <div class="checkbox">
+            <input type="checkbox" value="None" id="news" name="check" checked>
+            <label for="news"></label>
+            <span>Newsletter?</span>
+          </div>
           <textarea name="message" rows="6" placeholder="Drop us a line"></textarea>
           <button class="btn btn-full" type="submit" name="button">Send it!</button>
         </form>
@@ -322,7 +325,7 @@
         <p>Copyright © 2017 by Omnifood. All rights reserved</p>
       </div>
     </footer>
-    
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

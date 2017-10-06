@@ -429,3 +429,98 @@ h3 {
   display: block;
   margin: 20px auto 0;
 }
+/*-------------------------------------------------------------------------------*/
+/*FORM*/
+/*--------------------------------------------------------------------------------*/
+.email-form {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 120%;
+  font-family: 'Lato', sans-serif;
+  border: 1px solid #ff9e28;
+  transition: all .3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0.2px 0.2px 5px #ff9e28, -.2px -.2px 5px #ff9e28;
+}
+
+select {
+  background: none;
+}
+
+input[type="checkbox"] {
+  width: 10%;
+}
+
+input[type="checkbox"]:focus {
+  box-shadow: none;
+}
+
+.email-form .btn {
+  display: block;
+  margin: 0 auto;
+}
+/*--------------------------------------------------------------------------*/
+/*Checkbox*/
+/*---------------------------------------------------------------------------*/
+.checkbox {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  margin-bottom: 20px;
+  background: #fffcf4;
+  background: -webkit-linear-gradient(top, #fffcf4 0%, #e5e0d7 40%, #beb8ad 100%);
+  background: linear-gradient(to bottom, #fffcf4 0%, #e5e0d7 40%, #beb8ad 100%);
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.checkbox label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%);
+  background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
+}
+
+.checkbox label:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #ff9e28;
+  background: -webkit-linear-gradient(top, #ff9e28 0%, #5b4013 100%);
+  background: linear-gradient(to bottom, #ff9e28 0%, #5b4013 100%);
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.checkbox label:hover::after { opacity: 0.3; }
+.checkbox input[type=checkbox] { visibility: hidden; }
+.checkbox input[type=checkbox]:checked + label:after { opacity: 1; }
+
+.checkbox span {
+  position: absolute;
+    top: 2px;
+    left: 50px;
+}
+
+.checkbox span:hover { cursor: pointer; }
