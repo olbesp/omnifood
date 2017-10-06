@@ -606,7 +606,7 @@ select {
   h1 { font-size: 160%; }
 
   .iphone-img img { width: 30%; }
-  .mobile-app img { width: 150px; }
+  .mobile-app img { width: 120px; }
 
   .city-description { font-size: 110%; }
 
@@ -650,7 +650,14 @@ select {
     float: right;
   }
 
-  .step span { left: -35%; }
+  .iphone-img { margin-right: 20px;}
+
+  .step-list {
+    max-width: 500px;
+    margin-left: 0;
+    }
+
+  .step span { left: -75px; }
   .mobile-app { margin-left: 90px; }
 
   .city {
@@ -667,7 +674,7 @@ select {
 }
 
 /**********************************************************************************/
-/*DEVICES from 960px to px*/
+/*DEVICES from 960px to 1199px*/
 /**********************************************************************************/
 @media only screen and (min-width: 960px) {
 
@@ -714,7 +721,12 @@ select {
     margin-left: 40px;
   }
 
-  .iphone-img img { width: 60%; }
+  .iphone-img img {
+    width: 60%;
+    max-width: 200px;
+  }
+
+  .mobile-app { margin-left: 0; }
 
   .city {
     width: 45%;
@@ -732,4 +744,22 @@ select {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/**********************************************************************************/
+/*DEVICES from 1200px */
+/**********************************************************************************/
+@media only screen and (min-width: 1200px) {
+
+  .container,
+  .subscription .container {
+    width: 1100px;
+  }
+
+  .feature-description,
+  .city {
+    width: 23%;
+  }
+
+  .contacts { width: 800px; }
 }
