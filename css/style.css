@@ -571,7 +571,7 @@ select {
 }
 
 /**********************************************************************************/
-/*DEVICES from 480px to*/
+/*DEVICES from 480px to 699px*/
 /**********************************************************************************/
 @media only screen and (min-width: 480px) {
 
@@ -592,4 +592,28 @@ select {
   .step { margin-bottom: 25px; }
   .step span { left: -20%; }
   .mobile-app img { width: 120px; }
+}
+/**********************************************************************************/
+/*DEVICES from 700px to px*/
+/**********************************************************************************/
+@media only screen and (min-width: 700px) {
+
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  h1 { font-size: 160%; }
+
+  .iphone-img img { width: 30%; }
+  .mobile-app img { width: 150px; }
+
+  .city-description { font-size: 110%; }
+
+  .price-plan { width: 70%; }
+
+  .contacts {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
