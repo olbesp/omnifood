@@ -7,15 +7,40 @@ $(document).ready(function(){
     $(".menu").slideToggle();
 	});
 
-	// Fixed navbar
+	// Animations on scroll
+	$("h1").waypoint(function(direction) {
+		$("h1").addClass("animated slideInRight");
+	}, {
+		offset: "90%"
+	});
 
-	$("#about").waypoint(function(direction) {
-    if (direction == "down") {
-      $("nav").addClass("fixed-top");
-    } else {
-      $("nav").removeClass("fixed-top");
-    }
+	$(".heading .btn").waypoint(function(direction) {
+		$(".heading .btn").addClass("animated bounceIn");
+	}, {
+		offset: "90%"
+	});
+
+  $(".feature-description").waypoint(function(direction) {
+    $(".feature-description").addClass("animated fadeIn");
   }, {
-    offset: '70px;'
+    offset: '70%'
+  });
+
+  $(".iphone-img").waypoint(function(direction) {
+    $(".iphone-img").addClass("animated fadeInUp");
+  }, {
+    offset: '50%'
+  });
+
+  $(".city").waypoint(function(direction) {
+    $(".city").addClass("animated fadeIn");
+  }, {
+    offset: '70%'
+  });
+
+  $(".price-plan:first-of-type").waypoint(function(direction) {
+    $(".price-plan:first-of-type").addClass("animated pulse");
+  }, {
+    offset: '50%'
   });
 });
