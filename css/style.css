@@ -41,6 +41,7 @@ header {
   float: left;
 }
 
+
 .menu {
   display: none;
   margin-top: 50px;
@@ -724,6 +725,27 @@ select {
     display: inline-block;
     margin-left: 40px;
   }
+
+  /*Fixed nav*/
+  .fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    padding: 0 5%;
+    background: linear-gradient(#303030, #606060);
+    box-shadow: 0 2px 15px #303030;
+  }
+
+  .fixed-nav .logo {
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .fixed-nav .menu { margin-top: 17px; }
+  .fixed-nav .menu-item a:hover { border-bottom: 1px solid transparent; }
+  /*----------------------*/
 
   h1 span {
     margin-left: 40px;
