@@ -7,6 +7,19 @@ $(document).ready(function(){
     $(".menu").slideToggle();
 	});
 
+// ----------------------------------------------------------------
+	// Fixed nav
+
+	  $("#about").waypoint(function(direction) {
+	    if (direction == "down") {
+	      $("nav").addClass("fixed-nav");
+	    } else {
+	      $("nav").removeClass("fixed-nav");
+	    }
+	  }, {
+	    offset: '70px;'
+	  });
+
 // -------------------------------------------------------------
 	// Navigation scroll
 
@@ -50,7 +63,7 @@ $(document).ready(function(){
 // -------------------------------------------------------------
 
 	// Animations
-	
+
 	$("h1").waypoint(function(direction) {
 		$("h1").addClass("animated slideInRight");
 	}, {
