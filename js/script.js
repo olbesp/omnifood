@@ -8,6 +8,17 @@ $(document).ready(function(){
 	});
 
 // ----------------------------------------------------------------
+	// Header buttons scroll
+
+	  $("#watch-price").click(function() {
+	    $("html, body").animate({scrollTop: $("#sign-up").offset().top}, 1000);
+	  });
+
+	  $("#watch-about").click(function() {
+	    $("html, body").animate({scrollTop: $("#about").offset().top}, 800);
+	  });
+
+// ----------------------------------------------------------------
 	// Fixed nav
 
 	  $("#about").waypoint(function(direction) {
@@ -79,24 +90,24 @@ $(document).ready(function(){
   $(".feature-description").waypoint(function(direction) {
     $(".feature-description").addClass("animated fadeIn");
   }, {
-    offset: '70%'
+    offset: "70%"
   });
 
   $(".iphone-img").waypoint(function(direction) {
     $(".iphone-img").addClass("animated fadeInUp");
   }, {
-    offset: '50%'
+    offset: "50%"
   });
 
   $(".city").waypoint(function(direction) {
     $(".city").addClass("animated fadeIn");
   }, {
-    offset: '70%'
+    offset: "70%"
   });
 
   $(".price-plan:first-of-type").waypoint(function(direction) {
     $(".price-plan:first-of-type").addClass("animated pulse");
   }, {
-    offset: '50%'
+    offset: "50%"
   });
 });
