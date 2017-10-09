@@ -110,4 +110,10 @@ $(document).ready(function(){
   }, {
     offset: "50%"
   });
+
+	$(".sign-up-btn").waypoint(function(direction) {
+		$(".sign-up-btn").addClass("animated bounceIn");
+	}, {
+		offset: "80%"
+	});
 });

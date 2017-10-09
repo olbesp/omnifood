@@ -1,14 +1,8 @@
 /*********************************************************************************/
 /*DEVICES from ~320px to 479px*/
 /*********************************************************************************/
-* {
-  box-sizing: border-box;
-  /*border: 1px solid red;*/
-}
-
-*:focus {
-  outline-color: transparent;
-}
+* { box-sizing: border-box; }
+*:focus { outline-color: transparent; }
 
 body {
   margin: 0;
@@ -33,8 +27,6 @@ header {
   padding: 0 15px;
   margin: 0 auto;
 }
-
-
 /*---------------------------------------------------------------------------------*/
 /*Menu*/
 /*--------------------------------------------------------------------------------*/
@@ -44,7 +36,6 @@ header {
   margin-top: 20px;
   float: left;
 }
-
 
 .menu {
   display: none;
@@ -70,7 +61,6 @@ header {
 .menu-item a:hover {
   border-bottom: 1px solid #ff9e28;
   color: #ff9e28;
-
 }
 
 .menu-icon {
@@ -96,17 +86,10 @@ header {
   transition: .25s ease-in-out;
 }
 
-.menu-icon span:nth-child(1) {
-  top: 0px;
-}
-
-.menu-icon span:nth-child(2),.menu-icon span:nth-child(3) {
-  top: 13px;
-}
-
-.menu-icon span:nth-child(4) {
-  top: 26px;
-}
+.menu-icon span:nth-child(1) { top: 0px; }
+.menu-icon span:nth-child(2),
+.menu-icon span:nth-child(3) { top: 13px; }
+.menu-icon span:nth-child(4) { top: 26px; }
 
 .menu-icon.open span:nth-child(1) {
   top: 18px;
@@ -133,13 +116,33 @@ header {
   width: 0%;
   left: 50%;
 }
-
-
 /*--------------------------------------------------------------------------------*/
 /*Fixed navbar*/
 /*---------------------------------------------------------------------------------*/
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  padding: 0 5%;
+  background: linear-gradient(#303030, #606060);
+  box-shadow: 0 2px 15px #303030;
+}
 
+.fixed-nav .logo {
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
+.fixed-nav .menu {
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+
+.fixed-nav .menu-item a,
+.fixed-nav .menu-item a:hover { border-bottom: 0; }
 /*--------------------------------------------------------------------------------*/
 /*Heading*/
 /*-------------------------------------------------------------------------------*/
@@ -157,10 +160,7 @@ h1 {
   color: #fff;
 }
 
-h1 span {
-  font-size: 120%;
-}
-
+h1 span { font-size: 120%; }
 /*=====================================*/
 /*Animation*/
 /*=====================================*/
@@ -169,7 +169,6 @@ h1.animated { opacity: 1; }
 .heading .btn { opacity: 0; }
 .heading .btn.animated { opacity: 1; }
 /*=====================================*/
-
 /*-----------------------------------------------------------------------------*/
 /*Buttons*/
 /*------------------------------------------------------------------------------*/
@@ -198,7 +197,6 @@ h1.animated { opacity: 1; }
   color: #fff;
   background: #cc6f00;
 }
-
 /*-------------------------------------------------------------------------------*/
 /*ABOUT*/
 /*-------------------------------------------------------------------------------*/
@@ -233,16 +231,13 @@ h3 {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.feature-description p {
-  margin-top: 0;
-}
+.feature-description p { margin-top: 0; }
 /*=====================================*/
 /*Animation*/
 /*=====================================*/
 .feature-description { opacity: 0; }
 .feature-description.animated { opacity: 1; }
 /*=====================================*/
-
 /*-----------------------------------------------------------------------------*/
 /*FOOD PHOTOS*/
 /*------------------------------------------------------------------------------*/
@@ -281,9 +276,7 @@ h3 {
 }
 
 .iphone-img { text-align: center; }
-
 .iphone-img img { width: 40%; }
-
 /*=====================================*/
 /*Animation*/
 /*=====================================*/
@@ -327,16 +320,14 @@ h3 {
 /*---------------------------------------------------------------------------------*/
 /*CITIES*/
 /*----------------------------------------------------------------------------------*/
-.cities {
-  padding-bottom: 20px;
-}
+.cities { padding-bottom: 20px; }
+
 .city {
   width: 90%;
   height: 300px;
   margin: 0 auto;
   box-shadow: 2px 2px 20px #000;
 }
-
 /*=====================================*/
 /*Animation*/
 /*=====================================*/
@@ -356,10 +347,7 @@ h3 {
 }
 
 .black-box a:hover { color: #ff9e28; }
-
-.city-description {
-  font-size: 90%;
-}
+.city-description { font-size: 90%; }
 
 .city .fa {
   font-size: 120%;
@@ -413,15 +401,12 @@ h3 {
 
 .review {
   position: relative;
-  /*height: 270px;*/
   width: 90%;
   margin: 0 auto 40px;
   font-style: italic;
 }
 
-.author {
-  margin-bottom: 10px;
-}
+.author { margin-bottom: 10px; }
 
 .author img {
   width: 80px;
@@ -475,6 +460,11 @@ h3 {
   display: block;
   margin: 20px auto 0;
 }
+/*===================================*/
+/*Animation*/
+.sign-up-btn { opacity: 0; }
+.sign-up-btn .animated { opacity: 1; }
+/*====================================*/
 /*-------------------------------------------------------------------------------*/
 /*FORM*/
 /*--------------------------------------------------------------------------------*/
@@ -507,9 +497,7 @@ textarea:focus {
   box-shadow: inset 0px 1px 10px white, 0px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
-select {
-  background: none;
-}
+select { background: none; }
 
 .email-form .btn {
   display: block;
@@ -576,9 +564,7 @@ select {
 }
 
 .footer-nav ul,
-.social-media ul {
-  padding-left: 0;
-}
+.social-media ul { padding-left: 0; }
 
 .main-footer li {
   display: inline-block;
@@ -594,13 +580,10 @@ select {
 }
 
 .footer-nav a:hover,
-.social-media .fa:hover {
-  color: #ff9e28;
-}
+.social-media .fa:hover { color: #ff9e28; }
 
 .social-media,
 .footer-nav { text-align: center; }
-
 .social-media .fa { font-size: 20px; }
 
 .copyright {
@@ -728,30 +711,10 @@ select {
   }
 
   /*Fixed nav*/
-  .fixed-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 200;
-    width: 100%;
-    padding: 0 5%;
-    background: linear-gradient(#303030, #606060);
-    box-shadow: 0 2px 15px #303030;
-  }
 
-  .fixed-nav .logo {
-    height: 40px;
-    margin-top: 10px;
-  }
-
-  .fixed-nav .menu { margin-top: 17px; }
-  .fixed-nav .menu-item a,
-  .fixed-nav .menu-item a:hover { border-bottom: 0; }
   /*----------------------*/
 
-  h1 span {
-    margin-left: 40px;
-  }
+  h1 span { margin-left: 40px; }
 
   .iphone-img img {
     width: 60%;
@@ -768,9 +731,8 @@ select {
 
   .review { width: 30%; }
 
-  .subscription .container {
-    width: 100%;
-  }
+  .subscription .container { width: 100%; }
+
   .price-plan {
     width: 30%;
     margin-left: auto;
@@ -784,14 +746,10 @@ select {
 @media only screen and (min-width: 1200px) {
 
   .container,
-  .subscription .container {
-    width: 1100px;
-  }
+  .subscription .container { width: 1100px; }
 
   .feature-description,
-  .city {
-    width: 23%;
-  }
+  .city { width: 23%; }
 
   .contacts { width: 800px; }
 }
