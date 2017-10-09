@@ -6,6 +6,10 @@
   /*border: 1px solid red;*/
 }
 
+*:focus {
+  outline-color: transparent;
+}
+
 body {
   margin: 0;
   line-height: 150%;
@@ -68,8 +72,6 @@ header {
   color: #ff9e28;
 
 }
-
-.menu-item a:focus { outline: none; }
 
 .menu-icon {
   width: 40px;
@@ -197,7 +199,6 @@ h1.animated { opacity: 1; }
   background: #cc6f00;
 }
 
-.btn:focus { outline: none; }
 /*-------------------------------------------------------------------------------*/
 /*ABOUT*/
 /*-------------------------------------------------------------------------------*/
