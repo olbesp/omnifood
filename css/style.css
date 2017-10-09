@@ -744,7 +744,8 @@ select {
   }
 
   .fixed-nav .menu { margin-top: 17px; }
-  .fixed-nav .menu-item a:hover { border-bottom: 1px solid transparent; }
+  .fixed-nav .menu-item a,
+  .fixed-nav .menu-item a:hover { border-bottom: 0; }
   /*----------------------*/
 
   h1 span {
