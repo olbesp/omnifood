@@ -39,19 +39,22 @@ header {
 
 .menu {
   display: none;
-  margin-top: 50px;
-  float: right;
+  padding: 0;
+  margin-top: 40px;
+  float: left;
   list-style: none;
 }
 
 .menu-item {
-  display: inline-block;
-  margin-left: 40px;
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 3px;
 }
 
 .menu-item a {
   padding: 10px 0;
   border-bottom: 1px solid transparent;
+  font-size: 80%;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -64,57 +67,17 @@ header {
 }
 
 .menu-icon {
-  width: 40px;
-  height: 45px;
-  position: relative;
-  margin: 20px 10px auto auto;
-  transform: rotate(0deg);
-  transition: .5s ease-in-out;
+  display: inline-block;
+  float: right;
+  margin-top: 30px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
-.menu-icon span {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: #fff;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
+.menu-icon i {
+  font-size: 35px;
+  color: #fff;
 
-.menu-icon span:nth-child(1) { top: 0px; }
-.menu-icon span:nth-child(2),
-.menu-icon span:nth-child(3) { top: 13px; }
-.menu-icon span:nth-child(4) { top: 26px; }
-
-.menu-icon.open span:nth-child(1) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
-}
-
-.menu-icon.open span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.menu-icon.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.menu-icon.open span:nth-child(4) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
 }
 /*--------------------------------------------------------------------------------*/
 /*Fixed navbar*/
@@ -132,7 +95,7 @@ header {
 
 .fixed-nav .logo {
   height: 40px;
-  margin-top: 5px;
+  margin-top: 6px;
   margin-bottom: 5px;
 }
 
@@ -143,6 +106,11 @@ header {
 
 .fixed-nav .menu-item a,
 .fixed-nav .menu-item a:hover { border-bottom: 0; }
+
+.fixed-nav .menu-icon {
+  margin-top: 8px;
+  margin-right: 0;
+}
 /*--------------------------------------------------------------------------------*/
 /*Heading*/
 /*-------------------------------------------------------------------------------*/
@@ -698,6 +666,7 @@ select { background: none; }
 /**********************************************************************************/
 @media only screen and (min-width: 960px) {
 
+  .menu-icon { display: none; }
   .menu {
     display: block;
     margin-top: 50px;

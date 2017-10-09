@@ -2,9 +2,18 @@ $(document).ready(function(){
 
 	// Mobile menu
 
-	$(".menu-icon").click(function(){
-		$(this).toggleClass("open");
-    $(".menu").slideToggle();
+	$(".menu-icon").click(function() {
+		var menu = $(".menu");
+		menu.slideToggle(400);
+		// Change icon
+		var icon = $(".menu-icon i");
+		if (icon.hasClass("fa-bars")) {
+			icon.removeClass("fa-bars");
+			icon.addClass("fa-times");
+		} else {
+			icon.removeClass("fa-times");
+			icon.addClass("fa-bars");
+		}
 	});
 
 // ----------------------------------------------------------------
