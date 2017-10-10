@@ -580,6 +580,8 @@ select { background: none; }
 
   .step { margin-bottom: 25px; }
   .mobile-app img { width: 120px; }
+
+  .price-plan { width: 65%; }
 }
 /**********************************************************************************/
 /*DEVICES from 700px to 829px*/
@@ -598,7 +600,7 @@ select { background: none; }
 
   .city-description { font-size: 110%; }
 
-  .price-plan { width: 70%; }
+  .price-plan { width: 60%; }
 
   .contacts {
     width: 70%;
