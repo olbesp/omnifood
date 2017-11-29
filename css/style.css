@@ -34,7 +34,7 @@ header {
 /*Menu*/
 /*--------------------------------------------------------------------------------*/
 .logo {
-  height: 100px;
+  height: 60px;
   width: auto;
   margin-top: 20px;
   float: left;
@@ -643,6 +643,8 @@ select { background: none; }
     width: 85%;
     margin: 0 auto;
   }
+
+  .logo { height: 100px; }
 
   h1 { font-size: 160%; }
 
